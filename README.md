@@ -10,12 +10,12 @@ The task is build a component (widget) that displays movies, tv shows, and peopl
 
 ### Minimum Requirements
 
-- The component should be able to search movies, tv shows, & people. **Additionally the search should be scoped to the current tab. E.g. if you are on the "people" tab it should use the people endpoint**
+- The component should be able to search movies, tv shows, & people. **The results should only be relevant to the current tab, e.g. if you are on the movie tab only movies show in the results**
 - Please match the design as closely as possible. Any extra UI elements must maintain the original design language
 - Code to be submitted via a public repository or online code platform (Github, BitBucket, CodeSandbox, StackBlitz, etc...)
 - README with an explanation how to build the project
 
-### Extra Credit
+### Optional Features
 
 Before adding any extra features please make sure they are complete. We would rather see just the minimum requirements than half finished features. Either way you **will** be asked your thoughts on implementing the following features:
 
@@ -27,6 +27,8 @@ Before adding any extra features please make sure they are complete. We would ra
 - Search as you type
 - Sensible animations/transitions
 - Infinite scroll/pagination
+- Lazy loading images
+- Truncating long descriptions/bios
 - Tests
 
 ### Technology Requirements
