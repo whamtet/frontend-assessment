@@ -23,6 +23,7 @@ Before adding any extra features please make sure they are complete. We would ra
 - Dedicated entry points for the tabs (remember this is not a page but a component and the component should be able to be dropped into any site/app)
 - Multiple thumbnails
 - More details link/button
+- Inline movie trailer
 - Search as you type
 - Sensible animations/transitions
 - Tests
@@ -33,7 +34,7 @@ Use any library/framework you feel comfortable with. However, the position requi
 
 ### Hints
 
-- Use [multiple available endpoints to search](https://developers.themoviedb.org/3/search/multi-search)
+- There are [multiple endpoints for searching](https://developers.themoviedb.org/3/search/multi-search)
 
 ## Deadline
 
