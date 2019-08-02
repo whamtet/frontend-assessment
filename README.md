@@ -26,6 +26,7 @@ Before adding any extra features please make sure they are complete. We would ra
 - Inline movie trailer
 - Search as you type
 - Sensible animations/transitions
+- Infinite scroll/pagination
 - Tests
 
 ### Technology Requirements
