@@ -1,4 +1,4 @@
-# Comvex Front-end Assessment
+# Comvex Frontend Assessment
 
 The goal of this assessment is to learn about an applicant's approach to building re-usable components. Please be ready to talk about the technical and design choices you made.
 
@@ -12,7 +12,7 @@ You will receive a link to our design tool [Invision](https://www.invisionapp.co
 
 | Movie Tab                                            | People Tab                                           |
 | :--------------------------------------------------- | :--------------------------------------------------- |
-| ![Screenshot 2](./images/front-end-assessment-2.png) | ![Screenshot 1](./images/front-end-assessment-1.png) |
+| ![Screenshot 2](./images/frontend-assessment-2.png) | ![Screenshot 1](./images/frontend-assessment-1.png) |
 
 ### Minimum Requirements
 
