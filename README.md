@@ -28,7 +28,6 @@ Before adding any extra features please make sure they are complete. We would ra
 - Updating the url with search term
 - Dedicated entry points for the tabs (remember this is not a page but a component and the component should be able to be dropped into any site/app)
 - Multiple thumbnails
-- More details link/button
 - Inline movie trailer
 - Search as you type
 - Sensible animations/transitions
