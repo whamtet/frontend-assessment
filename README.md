@@ -8,7 +8,7 @@ The task is build a component (widget) that displays movies, tv shows, and peopl
 
 **Please write your code as you would in a professional environment (ready to be submitted for a PR)**
 
-You will receive a link to our design tool [Invision](https://www.invisionapp.com/) with a link and password to view the design. Below are screenshots of what the component should look like.
+You will receive a link to our design tool [Invision](https://www.invisionapp.com/) with a password to view the design. Below are screenshots of what the component should look like.
 
 | Movie Tab                                            | People Tab                                           |
 | :--------------------------------------------------- | :--------------------------------------------------- |
