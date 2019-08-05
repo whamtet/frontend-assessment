@@ -6,7 +6,12 @@ The goal of this assessment is to learn about an applicant's approach to buildin
 
 The task is build a component (widget) that displays movies, tv shows, and people using the [The Movie DB](https://developers.themoviedb.org/3/getting-started/introduction) api.
 
+You will receive a link to our design tool [Invision](https://www.invisionapp.com/) with a link and password to view the design.
+
 **Please write your code as you would in a professional environment (ready to be submitted for a PR)**
+
+![Screenshot 2](./images/front-end-assessment-2.png)
+![Screenshot 1](./images/front-end-assessment-1.png)
 
 ### Minimum Requirements
 
