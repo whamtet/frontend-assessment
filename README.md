@@ -4,7 +4,7 @@ The goal of this assessment is to learn about an applicant's approach to buildin
 
 ## Movie Search Component
 
-The task is build a component (widget) that displays movies, tv shows, and people using the [The Movie DB](https://developers.themoviedb.org/3/getting-started/introduction) api.
+The task is to build a component (widget) that displays movies, tv shows, and people using the [The Movie DB](https://developers.themoviedb.org/3/getting-started/introduction) api.
 
 **Please write your code as you would in a professional environment (ready to be submitted for a PR)**
 
