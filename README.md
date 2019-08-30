@@ -16,8 +16,6 @@ Please check our [InVision Assessment Project](https://invis.io/TWTATYNZ9XC) to 
 
 > The password to access the project will be sent to you separately.
 
-You can use InVision's `Inspect` feature to get more details about the UI integration (see the `</>` icon on the bottom right of the screen). This feature requires to be logged in to InVision (creating an account is free).
-
 ### Minimum Requirements
 
 - The component should be able to search movies, TV shows, & people. **The results should only be relevant to the current tab** (e.g. if you are on the movie tab only movies are displayed).
