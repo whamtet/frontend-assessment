@@ -46,4 +46,4 @@ Use any library/framework you feel comfortable with. However, the position requi
 
 ## Deadline
 
-There is no hard deadline but try and submit your work within 7 days. If you need more time please let us know by sending an email.
+There is no hard deadline but try and submit your work within 10 days. If you need more time please let us know by sending an email.
