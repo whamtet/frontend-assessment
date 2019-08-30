@@ -16,7 +16,7 @@ You will receive a link to our design tool [Invision](https://www.invisionapp.co
 
 ### Minimum Requirements
 
-- The component should be able to search movies, tv shows, & people. **The results should only be relevant to the current tab, e.g. if you are on the movie tab only movies show in the results**
+- The component should be able to search movies, tv shows, & people. **The results should only be relevant to the current tab, e.g. if you are on the movie tab only movies are displayed**
 - Please match the design as closely as possible. Any extra UI elements must maintain the original design language
 - Code to be submitted via a public repository or online code platform (Github, BitBucket, CodeSandbox, StackBlitz, etc...)
 - README with an explanation how to build the project
