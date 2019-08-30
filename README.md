@@ -23,7 +23,7 @@ You will receive a link to our design tool [Invision](https://www.invisionapp.co
 
 ### Optional Features
 
-Before adding any extra features please make sure they are complete. We would rather see just the minimum requirements than half finished features. Either way you **will** be asked your thoughts on implementing the following features:
+Before adding any extra features please make sure they are complete. We would rather just see the minimum requirements than half finished features. Either way you **will** be asked your thoughts on implementing the following features:
 
 - Updating the url with search term
 - Dedicated entry points for the tabs (remember this is not a page but a component and the component should be able to be dropped into any site/app)
