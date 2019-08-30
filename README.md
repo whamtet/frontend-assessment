@@ -12,7 +12,7 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 | :--------------------------------------------------- | :--------------------------------------------------- |
 | ![Screenshot 2](./images/frontend-assessment-2.png) | ![Screenshot 1](./images/frontend-assessment-1.png) |
 
-Please check our [InVision Assessment Project](https://invis.io/TWTATYNZ9XC) to have a clear view of what the component should look like.
+**Please check our [InVision Assessment Project](https://invis.io/TWTATYNZ9XC) to have a clear view of what the component should look like.**
 
 > The password to access the project will be sent to you separately.
 
