@@ -10,7 +10,7 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 
 | All Filter                                          | Movie Filter                                  |
 | :-------------------------------------------------- | :-------------------------------------------------- |
-| ![Screenshot 1](./images/Movie-widget-all.jpg)      | ![Screenshot 2](./images/fMovie-widget-movies.jpg) |
+| ![Screenshot 1](./images/Movie-widget-all.jpg)      | ![Screenshot 2](./images/Movie-widget-movies.jpg) |
 
 | Search Results                                            | 
 | :-------------------------------------------------------- | 
