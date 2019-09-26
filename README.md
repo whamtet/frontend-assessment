@@ -8,13 +8,13 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 
 **Please write your code as you would in a professional environment (ready to be submitted for a PR).**
 
-| Default Filter                                      | Filtered by Movies                                |
-| :-------------------------------------------------- | :------------------------------------------------ |
-| ![Screenshot 1](./images/Movie-widget-all.jpg)      | ![Screenshot 2](./images/Movie-widget-movies.jpg) |
+| Default Filter                                 | Filtered by Movies                                |
+| :--------------------------------------------- | :------------------------------------------------ |
+| ![Screenshot 1](./images/Movie-widget-all.jpg) | ![Screenshot 2](./images/Movie-widget-movies.jpg) |
 
-| Search Results                                                                                          | 
-| :------------------------------------------------------------------------------------------------------ | 
-| ![Screenshot 3](./images/Movie-widget-search-results.jpg)                                               |
+| Search Results                                            |
+| :-------------------------------------------------------- |
+| ![Screenshot 3](./images/Movie-widget-search-results.jpg) |
 
 **Please check our [InVision Assessment Project](https://invis.io/TWTATYNZ9XC) to have a clear view of what the component should look like.**
 
