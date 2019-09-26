@@ -18,8 +18,8 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 
 **Please check our [InVision Assessment Project](https://invis.io/TWTATYNZ9XC) to have a clear view of what the component should look like.**
 
-> Assets can be downloaded [here](https://drive.google.com/file/d/1YqIAwHu4ZjKaiBXvmF5jJVWWPsSpAZHR/view?usp=sharing)
-> The password to access the project will be sent to you separately.
+- Assets can be downloaded [here](https://drive.google.com/file/d/1Xm3GC1vv-TMoLW6Okpvoa3FNaGdflfaK/view?usp=sharing)
+- The password to access the project will be sent to you separately.
 
 ### Minimum Requirements
 
