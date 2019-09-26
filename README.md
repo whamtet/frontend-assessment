@@ -8,8 +8,8 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 
 **Please write your code as you would in a professional environment (ready to be submitted for a PR).**
 
-| Movie Tab                                            | People Tab                                           |
-| :--------------------------------------------------- | :--------------------------------------------------- |
+| Movie Tab                                           | People Tab                                          |
+| :-------------------------------------------------- | :-------------------------------------------------- |
 | ![Screenshot 2](./images/frontend-assessment-2.png) | ![Screenshot 1](./images/frontend-assessment-1.png) |
 
 **Please check our [InVision Assessment Project](https://invis.io/TWTATYNZ9XC) to have a clear view of what the component should look like.**
@@ -18,15 +18,16 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 
 ### Minimum Requirements
 
-- The component should be able to search movies, TV shows, & people. **The results should only be relevant to the current tab** (e.g. if you are on the movie tab only movies are displayed).
+- The component should use the [multi search endpoint](https://developers.themoviedb.org/3/search/multi-search) to search movies, TV and people.
+- Client-side filtering (movies, TV, and people)
+- Movie and TV show results should display a button allowing the user to view the trailer using the [movie](https://developers.themoviedb.org/3/movies/get-movie-videos) and [TV](https://developers.themoviedb.org/3/tv/get-tv-videos) video endpoints.
 - Please match the original design as closely as possible. Any extra UI elements must maintain the original design language.
 - Deliver your code via a public repository or online code platform (GitHub, BitBucket, CodeSandbox, StackBlitz, etc...).
 - Provide a `README.md` file with an explanation on how to install & run your project.
 
 ### Optional Features
 
-- Updating the URL with search term
-- Dedicated entry points for the tabs (remember this is not a page but a component and the component should be able to be dropped into any site/app)
+- Updating the URL with search term/filters
 - Multiple thumbnails
 - Inline movie trailer
 - Search as you type
@@ -41,10 +42,6 @@ The task is to build a component (widget) that displays movies, TV shows, and pe
 ### Technology Requirements
 
 Use any library/framework you feel comfortable with. However, the position requires professional level ability with React.
-
-### Hints
-
-- There are [multiple endpoints for searching](https://developers.themoviedb.org/3/search/multi-search)
 
 ## Deadline
 
