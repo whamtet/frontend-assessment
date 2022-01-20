@@ -1,0 +1,20 @@
+.btn {
+    border-radius: 1.5em;
+    background-color: #92c744;
+    color: white;
+    border: 0;
+    padding: 0.6em;
+}
+
+.btn .fa-play {
+    margin-right: 0.5em;
+}
+
+.btn-available:hover {
+    background-color: #75a634;
+}
+
+.btn-unavailable {
+    background-color: #d7dfe5;
+    color: #587085;
+}
