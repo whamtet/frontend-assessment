@@ -1,10 +1,10 @@
 import './widgets.css';
-import notallowed from './notallowed.svg';
+import notallowed from './assets/notallowed.svg';
 
 export const playButton = (
     <button className="btn btn-available">
-        <i className="fa fa-play" />
-        Play Trailer</button>
+        <i className="fa fa-play" /> Play Trailer
+    </button>
 );
 
 // we use inline css because we wish to bundle image
