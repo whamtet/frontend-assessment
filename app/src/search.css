@@ -1,16 +1,18 @@
 .search-bar {
     display: flex;
-    position: relative;
+}
+
+.search-input {
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .search-bar img {
     position: absolute;
-    left: 0.5em;
-    top: 0.25em;
-    font-size: 1.2em;
-    width: 1em;
-    height: 2em;
-    color: #667888;
+    left: 0.6em;
+    top: 0.3em;
+    width: 1.2em;
+    height: 2.4em;
 }
 
 .search-bar input {
@@ -32,8 +34,15 @@
     color: transparent;
 }
 
+.clear-text {
+    color: #4279c0;
+    position: absolute;
+    right: 8em;
+    top: 14px;
+}
+
 .search-bar button {
-    padding: 0.8em 2em;
+    padding: 13px 0;
     color: #3b5266;
     border: 1px solid #bfc9d3;
     border-radius: 0px 5px 5px 0px;
