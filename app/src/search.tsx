@@ -1,5 +1,5 @@
 import search from './assets/Icons-search.svg';
-import './search.css';
+import './search.scss';
 
 import * as React from 'react';
 

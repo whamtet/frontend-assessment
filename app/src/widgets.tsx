@@ -1,4 +1,4 @@
-import './widgets.css';
+import './widgets.scss';
 import notallowed from './assets/notallowed.svg';
 
 export const playButton = (
