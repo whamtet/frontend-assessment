@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'src/colors';
 
 .btn {
     border-radius: 1.5em;
@@ -28,7 +28,7 @@
     padding: 0.4em 0.7em;
 }
 .btn-filter:hover {
-    background-color: #ecf3f5;
+    background-color: $hover_grey;
 }
 
 .btn-filter.selected {

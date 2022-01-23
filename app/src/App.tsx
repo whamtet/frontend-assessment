@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import * as Widgets from './widgets';
-import {SearchBar} from "./search";
+import * as Rating from './widgets/rating';
 
 function App() {
   return (
     <div className="App">
-      {Widgets.filterButton('Movies', true)}
+      {Rating.ratingWidget(80)}
     </div>
   );
 }

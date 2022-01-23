@@ -1,5 +1,5 @@
 import './widgets.scss';
-import notallowed from './assets/notallowed.svg';
+import notallowed from '../assets/notallowed.svg';
 
 export const playButton = (
     <button className="btn btn-available">
