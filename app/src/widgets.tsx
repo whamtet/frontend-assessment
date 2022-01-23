@@ -15,3 +15,8 @@ export const unavailableButton = (
     </button>
 );
 
+export const filterButton = (text: string, selected: boolean) => (
+    <button className={selected ? 'btn-filter selected' : 'btn-filter'}>
+        {text}
+    </button>
+);

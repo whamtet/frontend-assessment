@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import {SearchBar} from './search';
+import * as Widgets from './widgets';
+import {SearchBar} from "./search";
 
 function App() {
   return (
     <div className="App">
-      <SearchBar />
+      {Widgets.filterButton('Movies', true)}
     </div>
   );
 }
