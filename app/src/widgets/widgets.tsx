@@ -15,8 +15,18 @@ export const unavailableButton = (
     </button>
 );
 
-export const filterButton = (text: string, selected: boolean) => (
-    <button className={selected ? 'btn-filter selected' : 'btn-filter'}>
-        {text}
+export enum FilterOption {
+    All = "All",
+    Movies = "Movies",
+    TVShows = "TV Shows",
+    People = "People"
+}
+
+export const filterButton = (option: FilterOption, state: FilterOption, update: () => void) => (
+    <button
+        className={option === state ? 'btn-filter selected' : 'btn-filter'}
+        onClick={update}
+    >
+        {option.valueOf()}
     </button>
 );

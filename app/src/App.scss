@@ -1,0 +1,26 @@
+@import 'src/colors.scss';
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 750px;
+    margin: 0px auto;
+}
+
+.header {
+    background-color: $theme_primary;
+    color: white;
+    display: flex;
+    font-size: 18pt;
+    padding: 0.8em 1.1em;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.contents {
+    padding: 0.8em 1.1em;
+}
+
