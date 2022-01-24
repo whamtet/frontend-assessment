@@ -1,6 +1,10 @@
 const base_url = 'https://api.themoviedb.org/3';
 const api_key = process.env['REACT_APP_TMDB'];
 
+if (!api_key) {
+    console.error('WARNING: api_key not defined');
+}
+
 type MediaType = 'tv' | 'movie' | 'person';
 export interface Result {
     id: number;
