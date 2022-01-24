@@ -21,7 +21,7 @@ class App extends React.Component<object, State> {
     state = {
         filter: FilterOption.All,
         query: '',
-        results: ((window as any).results || []) as Client.Result[],
+        results: [],
         page: 0,
         total_pages: 0
     };
@@ -36,7 +36,6 @@ class App extends React.Component<object, State> {
             // append
             results = [...this.state.results, ...results];
         }
-        (window as any).results = results;
         this.setState({...this.state, results, page, total_pages, query});
     }
     extendResults() {
