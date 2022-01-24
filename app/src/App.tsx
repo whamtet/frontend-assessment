@@ -88,7 +88,26 @@ class App extends React.Component<object, State> {
         )
     }
     render() {
-        const {query, filter, results} = this.state;
+        const {filter, results} = this.state;
+
+        // to show
+        let toShow;
+        if (filter !== FilterOption.All) {
+            const filterValue = ({Movies: 'movie', 'TV Shows': 'tv', People: 'person'})[filter.valueOf()];
+            toShow = results.filter(r => r.media_type === filterValue);
+        } else {
+            toShow = results;
+        }
+
+        // display count summary;
+        let countSummary = '';
+        if (toShow.length === 0) {
+            countSummary = '0 results found';
+        }
+        if (toShow.length === 1) {
+            countSummary = '1 result found';
+        }
+
         return (
             <div className="App">
                 <div className="header">
@@ -105,15 +124,15 @@ class App extends React.Component<object, State> {
                         {filterButton(FilterOption.People, filter, () => this.setFilter(FilterOption.People))}
                     </div>
 
-                    {results.length === 1 ? (
+                    {countSummary ? (
                         <div className="single-result">
-                            1 result found
+                            {countSummary}
                         </div>
                         ) : null}
 
                     <hr />
 
-                    {results.map(r => this.row(r))}
+                    {toShow.map(r => this.row(r))}
                 </div>
             </div>
         );
