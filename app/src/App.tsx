@@ -2,8 +2,9 @@ import React from 'react';
 import './App.scss';
 import Logo from './assets/Logo.svg';
 import { SearchBar } from './widgets/search';
-import { filterButton, FilterOption } from './widgets/widgets';
+import { filterButton, FilterOption, playButton, unavailableButton } from './widgets/widgets';
 import * as Client from './client';
+import { ratingWidget } from "./widgets/rating";
 
 interface State {
     filter: FilterOption;
@@ -13,11 +14,13 @@ interface State {
     total_pages: number;
 }
 
+const truncate = (s: string, limit: number) => s.length < limit ? s : s.substring(0, limit) + '...';
+
 class App extends React.Component<object, State> {
     state = {
         filter: FilterOption.All,
         query: '',
-        results: [],
+        results: ((window as any).results || []) as Client.Result[],
         page: 0,
         total_pages: 0
     };
@@ -26,7 +29,13 @@ class App extends React.Component<object, State> {
     }
     async query(query: string, page: number) {
         let {results, total_pages} = await Client.searchMulti(query, page);
-        results = [...this.state.results, ...results];
+        // skip results without images for now.
+        results = results.filter(r => r.poster_path || r.profile_path);
+        if (page > 1) {
+            // append
+            results = [...this.state.results, ...results];
+        }
+        (window as any).results = results;
         this.setState({...this.state, results, page, total_pages, query});
     }
     extendResults() {
@@ -34,6 +43,49 @@ class App extends React.Component<object, State> {
         if (page < total_pages) {
             this.query(query, page + 1);
         }
+    }
+    row(r: Client.Result) {
+        let info = '', year = '';
+        const isPerson = r.media_type === 'person';
+        if (isPerson) {
+            if (r.gender || r.gender === 0) {
+                info = 'Gender: ' + ['Male', 'Female', 'Other', 'Other'][r.gender];
+            }
+        } else {
+            if (r.first_air_date || r.release_date) {
+                const formatted = r.first_air_date ?
+                    r.first_air_date.replaceAll('_', '/') :
+                    (r.release_date as string).replaceAll('-', '/');
+                info = 'Release date: ' + formatted;
+                year = `(${formatted.split('/')[0]})`;
+            }
+        }
+        const category = ({tv: 'TV', movie: 'Movie', person: 'People'})[r.media_type];
+        const rating = r.vote_average ? r.vote_average * 10 : undefined;
+        const viewLink = r.link ? playButton(r.link) : unavailableButton;
+        return (
+            <div key={r.id} className="result-row">
+                <img src={Client.imgSrc(r.poster_path || r.profile_path as string)} />
+                <div>
+                    <div className="title">
+                        {r.title || r.name} <span>{year}</span>
+                    </div>
+                    <div>
+                        <label>{category}</label>
+                        {info}
+                    </div>
+                    <div>
+                        {truncate(r.overview, 379)}
+                    </div>
+                    {isPerson ? undefined : (
+                        <div>
+                            {ratingWidget(rating)}
+                            {viewLink}
+                        </div>
+                        )}
+                </div>
+            </div>
+        )
     }
     render() {
         const {query, filter, results} = this.state;
@@ -60,6 +112,8 @@ class App extends React.Component<object, State> {
                         ) : null}
 
                     <hr />
+
+                    {results.map(r => this.row(r))}
                 </div>
             </div>
         );

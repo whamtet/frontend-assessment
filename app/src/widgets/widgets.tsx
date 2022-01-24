@@ -1,8 +1,8 @@
 import './widgets.scss';
 import notallowed from '../assets/notallowed.svg';
 
-export const playButton = (
-    <button className="btn btn-available">
+export const playButton = (href: string) => (
+    <button className="btn btn-available" onClick={() => window.open(href)}>
         <i className="fa fa-play" /> Play Trailer
     </button>
 );
