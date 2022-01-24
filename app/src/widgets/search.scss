@@ -18,7 +18,7 @@
         height: 2.4em;
     }
 
-    input {
+    input[type=text] {
         flex: 1 1 auto;
         border: 1px solid #bfc9d3;
         border-right: none;
@@ -27,17 +27,17 @@
         border-radius: 5px 0px 0px 5px;
     }
 
-    input:focus {
+    input[type=text]:focus {
         border: 1px solid #677d90;
         background-color: white;
         outline-width: 0;
     }
 
-    input:focus::placeholder {
+    input[type=text]:focus::placeholder {
         color: transparent;
     }
 
-    button {
+    input[type=submit] {
         padding: 13px 0;
         border: 1px solid $border_grey;
         border-radius: 0px 5px 5px 0px;
@@ -45,11 +45,11 @@
         flex: 0 0 100px;
     }
 
-    button:hover {
+    input[type=submit]:hover {
         background: white;
     }
 
-    button:active {
+    input[type=submit]:active {
         box-shadow: inset 0px 5px 5px -5px #bfc9d3;
     }
 }

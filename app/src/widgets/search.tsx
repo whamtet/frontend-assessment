@@ -3,11 +3,15 @@ import './search.scss';
 
 import * as React from 'react';
 
+interface Props {
+    search: (s: string) => void;
+}
+
 interface State {
     query: string;
 }
 
-export class SearchBar extends React.Component<object, State> {
+export class SearchBar extends React.Component<Props, State> {
     state = {
         query: ''
     }
@@ -20,6 +24,7 @@ export class SearchBar extends React.Component<object, State> {
             <div className="search-input">
                 <img src={search}/>
                 <input
+                    type="text"
                     onChange={e => this.updateQuery(e.target.value)}
                     placeholder="Search for movies, TV shows or people..."
                     value={query}
@@ -36,13 +41,19 @@ export class SearchBar extends React.Component<object, State> {
         );
     }
     render() {
+        const {search} = this.props;
+        const {query} = this.state;
+        const onSubmit = (e: any) => {
+            e.preventDefault();
+            if (query) {
+                search(query);
+            }
+        }
         return (
-            <div className="search-bar">
+            <form onSubmit={onSubmit} className="search-bar">
                 {this.searchSection()}
-                <button>
-                    Search
-                </button>
-            </div>
+                <input type="submit" value="Search" />
+            </form>
         );
     }
 }
