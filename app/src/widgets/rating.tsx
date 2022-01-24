@@ -5,7 +5,7 @@ type OptionalNum = number | undefined;
 export const ratingWidget = (rating: OptionalNum) => {
     const scoreMessage = (
         rating || rating === 0 ? rating.toFixed(0) + ' %' :
-            undefined
+            'Not rated'
     );
     const colorClass = (
         rating === undefined ? undefined :
@@ -17,15 +17,9 @@ export const ratingWidget = (rating: OptionalNum) => {
 
     return (
         <div className="rating">
-            {rating || rating === 0 ? (
-                <div>
-                    User Score: <b>{scoreMessage}</b>
-                </div>
-            ) : (
-                <div>
-                    Not rated
-                </div>
-            )}
+            <div>
+                User Score: <b>{scoreMessage}</b>
+            </div>
             <div className="rating-bar">
                 <div className={colorClass} style={{width}} />
             </div>

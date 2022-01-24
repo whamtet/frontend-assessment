@@ -44,6 +44,10 @@ hr {
     border-bottom: none;
 }
 
+hr.result {
+    margin-top: 24px;
+}
+
 .single-result {
     margin-top: 16px;
     margin-bottom: 4.8px;
@@ -54,15 +58,17 @@ hr {
     display: flex;
 
     .text-info {
+        flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
     img {
+        flex: 0 0 auto;
         width: 160px;
         margin-right: 16px;
-        box-shadow: 16px 32px 32px 0px #d4d9dd;
+        box-shadow: 10px 10px 32px 0px #d4d9dd;
     }
 
     .title {

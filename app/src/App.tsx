@@ -65,28 +65,31 @@ class App extends React.Component<object, State> {
         const rating = r.vote_average ? r.vote_average * 10 : undefined;
         const viewLink = r.link ? playButton(r.link) : unavailableButton;
         return (
-            <div key={r.id} className="result-row">
-                <img src={Client.imgSrc(r.poster_path || r.profile_path as string)} />
-                <div className="text-info">
-                    <div>
-                        <div className="title">
-                            {r.title || r.name} <span>{year}</span>
-                        </div>
-                        <div className="subtitle">
-                            <label>{category}</label>
-                            {info}
-                        </div>
-                        <div className="details">
-                            {truncate(r.overview, 300)}
-                        </div>
-                    </div>
-                    {isPerson ? undefined : (
+            <div key={r.id}>
+                <div className="result-row">
+                    <img src={Client.imgSrc(r.poster_path || r.profile_path as string)} />
+                    <div className="text-info">
                         <div>
-                            {ratingWidget(rating)}
-                            {viewLink}
+                            <div className="title">
+                                {r.title || r.name} <span>{year}</span>
+                            </div>
+                            <div className="subtitle">
+                                <label>{category}</label>
+                                {info}
+                            </div>
+                            <div className="details">
+                                {truncate(r.overview, 300)}
+                            </div>
                         </div>
-                        )}
+                        {isPerson ? undefined : (
+                            <div>
+                                {ratingWidget(rating)}
+                                {viewLink}
+                            </div>
+                            )}
+                    </div>
                 </div>
+                <hr className="result" />
             </div>
         )
     }
