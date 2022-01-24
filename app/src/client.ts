@@ -65,7 +65,7 @@ export const searchMulti = async (query: string, page: number): Promise<ResultMu
                     r.link = 'https://www.youtube.com/watch?v=' + videoResult.key;
                     break;
                 } else {
-                    // TODO
+                    // TODO: other sites?
                 }
             }
         }

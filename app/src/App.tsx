@@ -50,7 +50,7 @@ class App extends React.Component<object, State> {
         const isPerson = r.media_type === 'person';
         if (isPerson) {
             if (r.gender || r.gender === 0) {
-                info = 'Gender: ' + ['Male', 'Female', 'Other', 'Other'][r.gender];
+                info = 'Gender: ' + ['Other', 'Female', 'Male', 'Other'][r.gender];
             }
         } else {
             if (r.first_air_date || r.release_date) {
