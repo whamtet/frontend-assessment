@@ -21,7 +21,7 @@ class App extends React.Component<object, State> {
     state = {
         filter: FilterOption.All,
         query: '',
-        results: [],
+        results: [] as Client.Result[],
         page: 0,
         total_pages: 0
     };
