@@ -4,7 +4,8 @@ import Logo from './assets/Logo.svg';
 import { SearchBar } from './widgets/search';
 import { filterButton, FilterOption, playButton, unavailableButton } from './widgets/widgets';
 import * as Client from './client';
-import { ratingWidget } from "./widgets/rating";
+import { ratingWidget } from './widgets/rating';
+import { addScroll } from './widgets/scroll';
 
 interface State {
     filter: FilterOption;
@@ -133,6 +134,12 @@ class App extends React.Component<object, State> {
                     <hr />
 
                     {toShow.map(r => this.row(r))}
+
+                    {toShow.length ? (
+                        <div
+                            ref={el => addScroll(el, () => this.extendResults())}
+                        />
+                    ) : null}
                 </div>
             </div>
         );
