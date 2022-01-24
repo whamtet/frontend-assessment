@@ -35,6 +35,10 @@
     border-radius: 0px 0px 4px 4px
 }
 
+.search-options {
+    padding-bottom: 10px;
+}
+
 hr {
     border: 1px solid $border_grey;
     border-bottom: none;
@@ -57,14 +61,15 @@ hr {
 
     img {
         width: 160px;
-        margin-right: 22px;
+        margin-right: 16px;
         box-shadow: 16px 32px 32px 0px #d4d9dd;
     }
 
     .title {
         vertical-align: top;
-        margin-top: -3px;
+        margin-top: -4px;
         font-weight: bold;
+        font-size: 20px;
 
         span {
             font-weight: 400;

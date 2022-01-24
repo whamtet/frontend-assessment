@@ -26,7 +26,7 @@ export class SearchBar extends React.Component<Props, State> {
                 <input
                     type="text"
                     onChange={e => this.updateQuery(e.target.value)}
-                    placeholder="Search for movies, TV shows or people..."
+                    placeholder="Search for movies, tv shows or people..."
                     value={query}
                 />
                 {query ? (

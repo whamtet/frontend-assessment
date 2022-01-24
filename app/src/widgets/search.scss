@@ -9,13 +9,14 @@
 .search-bar {
 
     display: flex;
+    height: 37px;
 
     img {
         position: absolute;
         left: 9.6px;
-        top: 4.8px;
-        width: 18.4px;
-        height: 36.8px;
+        top: 5px;
+        width: 13px;
+        height: 26px;
     }
 
     input[type=text] {
@@ -23,8 +24,21 @@
         border: 1px solid #bfc9d3;
         border-right: none;
         background-color: #f9fbfc;
-        padding-left: 35.2px;
+        padding-left: 31px;
         border-radius: 5px 0px 0px 5px;
+    }
+
+    input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $placeholder;
+        opacity: 1; /* Firefox */
+    }
+
+    input[type=text]::-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $placeholder;
+    }
+
+    input[type=text]::-ms-input-placeholder { /* Microsoft Edge */
+        color: $placeholder;
     }
 
     input[type=text]:focus {
@@ -38,11 +52,12 @@
     }
 
     input[type=submit] {
-        padding: 13px 0;
+        padding: 10px 0;
         border: 1px solid $border_grey;
         border-radius: 0px 5px 5px 0px;
         background: linear-gradient(#ffffff, #edf3f5);
         flex: 0 0 100px;
+        color: #314c5e;
     }
 
     input[type=submit]:hover {
@@ -58,5 +73,5 @@
     color: #4279c0;
     position: absolute;
     right: 16px;
-    top: 14px;
+    top: 11px;
 }

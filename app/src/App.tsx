@@ -68,15 +68,17 @@ class App extends React.Component<object, State> {
             <div key={r.id} className="result-row">
                 <img src={Client.imgSrc(r.poster_path || r.profile_path as string)} />
                 <div className="text-info">
-                    <div className="title">
-                        {r.title || r.name} <span>{year}</span>
-                    </div>
-                    <div className="subtitle">
-                        <label>{category}</label>
-                        {info}
-                    </div>
-                    <div className="details">
-                        {truncate(r.overview, 300)}
+                    <div>
+                        <div className="title">
+                            {r.title || r.name} <span>{year}</span>
+                        </div>
+                        <div className="subtitle">
+                            <label>{category}</label>
+                            {info}
+                        </div>
+                        <div className="details">
+                            {truncate(r.overview, 300)}
+                        </div>
                     </div>
                     {isPerson ? undefined : (
                         <div>
